@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>221180539 - Julio</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+</head>
+<body>
+    <div id="kotakAtas"><h3>Admin Perusahaanku</h3></div>
+    <div id="container">
+        <div id="kotakKiri">
+            <div id="kontenKotakKiri">
+                <b>Catatan Penting</b> <br>
+                <input type="text" id="catatan" placeholder="Isi Catatan">
+                <button type="submit" id="tambahCat" class="ui-button ui-widget ui-corner-all">Tambah Catatan</button>
+            </div>
+        </div>
+        <div id="kotakKanan">
+            <b>Add Pegawai</b>
+            <table id="editTable">
+                <tr>
+                    <td>Username :</td>
+                    <td><input type="text" id="txtUsername" /></td>
+                </tr>
+                <tr>
+                    <td>Nama :</td>
+                    <td><input type="text" id="txtNama" /></td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin :</td>
+                    <td>
+                        <label for="radio-1" id="styleRadio1">Pria</label>
+                        <input type="radio" name="radio-1" id="radio-1" />
+                        <label for="radio-2" id="styleRadio2">Wanita</label>
+                        <input type="radio" name="radio-1" id="radio-2" />
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="submit" id="register" class="ui-button ui-widget ui-corner-all">Register</button></td>
+                </tr>
+            </table>
+            <hr>
+            <div id="fixHeadList"><b>List Pegawai</b></div>
+            <table id="listPegHead">
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Nama</th>
+                        <th>Jenis Kelamin</th>
+                    </tr>
+                </thead>
+            </table>
+            <hr>
+            <div id="data"></div>
+        </div>
+    </div>
+    <script src="Jquery.js"></script>
+</body>
+</html>
